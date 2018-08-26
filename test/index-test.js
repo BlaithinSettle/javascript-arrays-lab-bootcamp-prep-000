@@ -9,12 +9,17 @@ describe('Arrays', function() {
     })
   })
 
-  describe('destructivelyAppendKitten(name)', function() {
+  /*describe('destructivelyAppendKitten(name)', function() {
     it('appends a kitten to the end of the kittens array', function() {
       destructivelyAppendKitten('Ralph')
       expect(window.kittens).toEqual(["Milo", "Otis", "Garfield", "Ralph"])
     })
-  })
+  })*/
+  //editted code 
+  function destructivelyAppendKitten(Array, name){
+    Array=[Array, ...name]
+    return Array;
+  }
 
   describe('destructivelyPrependKitten(name)', function() {
     it('prepends a kitten to the beginning of the kittens array', function() {
@@ -23,6 +28,12 @@ describe('Arrays', function() {
       expect(window.kittens).toEqual(["Bob", "Milo", "Otis", "Garfield"])
     })
   })
+//editted code 
+function destructivelyPrependKitten(Array, name){
+  Array=[...name,Array]
+  return Array;
+}
+}
 
   describe('destructivelyRemoveLastKitten()', function() {
     it('removes the last kitten from the kittens array', function() {
