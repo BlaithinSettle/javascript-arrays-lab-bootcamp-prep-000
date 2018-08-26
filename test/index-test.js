@@ -88,14 +88,18 @@ function prependKitten(Array, name){
   return Array;
 }
 
-  describe('removeLastKitten()', function() {
+  /*describe('removeLastKitten()', function() {
     it('removes the last kitten in the kittens array and returns a new array, leaving the kittens array unchanged', function() {
       expect(removeLastKitten()).toEqual(["Milo", "Otis"])
 
       expect(window.kittens).toEqual(["Milo", "Otis", "Garfield"])
     })
-  })
+  })*/
 //7
+function removeLastKitten(Array, name){
+    Array= Array.slice(0, -1);
+    return Array;
+}
   describe('removeFirstKitten()', function() {
     it('removes the first kitten from the kittens array and returns a new array, leaving the kittens array unchanged', function() {
       expect(removeFirstKitten()).toEqual(["Otis", "Garfield"])
