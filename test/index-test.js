@@ -26,10 +26,7 @@ describe('Arrays', function() {
     })
   })*/
 //editted code 
-function destructivelyPrependKitten(Array, name){
-  Array=[...name,Array]
-  return Array;
-}
+
 }
 
   describe('destructivelyRemoveLastKitten()', function() {
