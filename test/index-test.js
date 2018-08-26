@@ -21,13 +21,13 @@ describe('Arrays', function() {
     return Array;
   }
 
-  describe('destructivelyPrependKitten(name)', function() {
+ /* describe('destructivelyPrependKitten(name)', function() {
     it('prepends a kitten to the beginning of the kittens array', function() {
       destructivelyPrependKitten("Bob")
 
       expect(window.kittens).toEqual(["Bob", "Milo", "Otis", "Garfield"])
     })
-  })
+  })*/
 //editted code 
 function destructivelyPrependKitten(Array, name){
   Array=[...name,Array]
