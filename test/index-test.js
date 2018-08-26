@@ -16,10 +16,7 @@ describe('Arrays', function() {
     })
   })*/
   //editted code 
-  function destructivelyAppendKitten(Array, name){
-    Array=[Array, ...name]
-    return Array;
-  }
+ 
 
  /* describe('destructivelyPrependKitten(name)', function() {
     it('prepends a kitten to the beginning of the kittens array', function() {
