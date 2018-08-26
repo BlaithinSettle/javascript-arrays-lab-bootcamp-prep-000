@@ -45,7 +45,8 @@ function destructivelyPrependKitten(Array, name){
   })*/
   //3 
   function destructivelyRemoveLastKitten(Array){
-    return Array.slice(-1);
+    Array=Array.slice(-1);
+    return Array;
   }
 
   describe('destructivelyRemoveFirstKitten()', function() {
