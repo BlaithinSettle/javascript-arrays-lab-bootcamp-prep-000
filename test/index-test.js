@@ -45,7 +45,7 @@ function destructivelyPrependKitten(Array, name){
   })*/
   //3 
   function destructivelyRemoveLastKitten(Array){
-    Array=Array.slice(-1);
+    Array=Array.slice(0,-1);
     return Array;
   }
 
