@@ -75,15 +75,18 @@ function destructivelyRemoveFirstKitten(Array){
     return catNames.concat(newName);
 }
 
-  describe('prependKitten(name)', function() {
+  /*describe('prependKitten(name)', function() {
     it('prepends a kitten to the kittens array and returns a new array, leaving the kittens array unchanged', function() {
       expect(prependKitten("Arnold")).toEqual(["Arnold", "Milo", "Otis", "Garfield"])
 
       expect(window.kittens).toEqual(["Milo", "Otis", "Garfield"])
     })
-  })
+  })*/
 //6 
-
+function prependKitten(Array, name){
+  Array=[...name, Array]
+  return Array;
+}
 
   describe('removeLastKitten()', function() {
     it('removes the last kitten in the kittens array and returns a new array, leaving the kittens array unchanged', function() {
