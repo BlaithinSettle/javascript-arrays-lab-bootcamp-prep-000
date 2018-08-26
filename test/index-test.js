@@ -36,13 +36,17 @@ function destructivelyPrependKitten(Array, name){
   Array=[...name, Array]
   return Array;
 }
-  describe('destructivelyRemoveLastKitten()', function() {
+  /*describe('destructivelyRemoveLastKitten()', function() {
     it('removes the last kitten from the kittens array', function() {
       destructivelyRemoveLastKitten()
 
       expect(window.kittens).toEqual(["Milo", "Otis"])
     })
-  })
+  })*/
+  //3 
+  function destructivelyRemoveLastKitten(Array){
+    return Array.slice(-1);
+  }
 
   describe('destructivelyRemoveFirstKitten()', function() {
     it('removes the First kitten from the kittens array', function() {
